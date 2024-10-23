@@ -3,17 +3,23 @@ layout: default
 ---
 
 <article class="dialogue">
+  <h1>{{ page.title }}</h1>
   {{ content }}
 
   <nav class="dialogue-nav">
-    {% assign dialogues = site.dialogues | sort: 'name' %} {% for dialogue in
-    dialogues %} {% if dialogue.name == page.name %} {% if forloop.first != true
-    %} {% assign prev = prev_dialogue %}
-    <a class="prev" href="{{ site.baseurl }}{{ prev.url }}">&laquo; Previous</a>
-    {% endif %} {% if forloop.last != true %} {% assign next =
-    dialogues[forloop.index] %}
-    <a class="next" href="{{ site.baseurl }}{{ next.url }}">Next &raquo;</a>
-    {% endif %} {% break %} {% endif %} {% assign prev_dialogue = dialogue %} {%
-    endfor %}
+    {% assign dialogues = site.dialogues | sort: 'name' %} {% assign
+    dialogue_index = 0 %} {% for d in dialogues %} {% if d.url == page.url %} {%
+    assign dialogue_index = forloop.index0 %} {% break %} {% endif %} {% endfor
+    %} {% if dialogue_index > 0 %} {% assign prev_index = dialogue_index |
+    minus: 1 %}
+    <a class="prev" href="{{ site.baseurl }}{{ dialogues[prev_index].url }}"
+      >&laquo; Previous</a
+    >
+    {% endif %} {% assign next_index = dialogue_index | plus: 1 %} {% if
+    next_index < dialogues.size %}
+    <a class="next" href="{{ site.baseurl }}{{ dialogues[next_index].url }}"
+      >Next &raquo;</a
+    >
+    {% endif %}
   </nav>
 </article>
