@@ -50,3 +50,15 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  dialogues:
+    output: true
+    permalink: /dialogue/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "dialogues"
+    values:
+      layout: "dialogue"
