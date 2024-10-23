@@ -3,10 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title:
+title: Dialogue
 ---
-
-# Dialogues
 
 {% assign dialogues = site.dialogues | sort: 'name' %}
 {% for dialogue in dialogues %}

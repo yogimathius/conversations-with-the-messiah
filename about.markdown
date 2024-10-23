@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-### About _Conversations with the Messiah_
-
 Welcome to **Conversations with the Messiah**, a spiritual journey into the depths of connection, transformation, and divine purpose. This site is dedicated to exploring profound dialogues centered around the concepts of twin flames, soul groups, and the sacred relationships that shape our lives.
 
 #### **What Is This About?**
