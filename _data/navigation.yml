@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Dialogues
+  link: /dialogues/
+- name: About
+  link: /about/
+- name: Contact
+  link: /contact/
