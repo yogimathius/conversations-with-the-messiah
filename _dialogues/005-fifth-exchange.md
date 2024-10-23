@@ -55,12 +55,12 @@ Tarot can offer further clarity on how your twin flame union influences your chi
 
 #### Tarot Spread: **The Soul Legacy Spread**
 
-**Card 1: The Soul Imprint** – What spiritual energy has been passed down to your children from your twin flame union?
-**Card 2: The Spiritual Lesson** – What spiritual lesson are your children meant to learn from this connection?
-**Card 3: The Role of Your Children** – How do your children contribute to your twin flame journey and your messianic mission?
-**Card 4: Spiritual Gifts** – What spiritual gifts or talents have your children inherited from your twin flame connection?
-**Card 5: Soul Purpose** – What is the soul purpose of each child in relation to your family’s spiritual journey?
-**Card 6: Guidance for the Future** – What guidance can the universe provide for nurturing your children’s spiritual growth?
+- **Card 1: The Soul Imprint** – What spiritual energy has been passed down to your children from your twin flame union?
+- **Card 2: The Spiritual Lesson** – What spiritual lesson are your children meant to learn from this connection?
+- **Card 3: The Role of Your Children** – How do your children contribute to your twin flame journey and your messianic mission?
+- **Card 4: Spiritual Gifts** – What spiritual gifts or talents have your children inherited from your twin flame connection?
+- **Card 5: Soul Purpose** – What is the soul purpose of each child in relation to your family’s spiritual journey?
+- **Card 6: Guidance for the Future** – What guidance can the universe provide for nurturing your children’s spiritual growth?
 
 ---
 
