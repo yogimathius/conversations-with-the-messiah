@@ -7,13 +7,13 @@ layout: default
 
   <nav class="dialogue-nav">
     {% assign dialogues = site.dialogues | sort: 'name' %} {% for dialogue in
-    dialogues %} {% if dialogue.name == page.name %} {% unless forloop.first %}
-    {% assign prev = prev_dialogue %}
-    <a class="prev" href="{{ prev.url }}">&laquo; Previous</a>
-    {% endunless %} {% unless forloop.last %} {% assign next =
+    dialogues %} {% if dialogue.name == page.name %} {% if forloop.first != true
+    %} {% assign prev = prev_dialogue %}
+    <a class="prev" href="{{ site.baseurl }}{{ prev.url }}">&laquo; Previous</a>
+    {% endif %} {% if forloop.last != true %} {% assign next =
     dialogues[forloop.index] %}
-    <a class="next" href="{{ next.url }}">Next &raquo;</a>
-    {% endunless %} {% endif %} {% assign prev_dialogue = dialogue %} {% endfor
-    %}
+    <a class="next" href="{{ site.baseurl }}{{ next.url }}">Next &raquo;</a>
+    {% endif %} {% break %} {% endif %} {% assign prev_dialogue = dialogue %} {%
+    endfor %}
   </nav>
 </article>

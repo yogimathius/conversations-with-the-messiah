@@ -1,0 +1,18 @@
+---
+layout: default
+title: Dialogues
+---
+
+<div class="home">
+  <h1>{{ page.title }}</h1>
+
+  {% assign sorted_dialogues = site.dialogues | sort: 'name' %} {% for dialogue
+  in sorted_dialogues %}
+  <article>
+    <h2>
+      <a href="{{ site.baseurl }}{{ dialogue.url }}">{{ dialogue.title }}</a>
+    </h2>
+    {{ dialogue.content | strip_html | truncatewords: 50 }}
+  </article>
+  {% endfor %}
+</div>
