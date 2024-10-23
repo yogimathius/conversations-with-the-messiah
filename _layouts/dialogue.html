@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="dialogue">
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+
+  <nav class="dialogue-nav">
+    {% assign dialogues = site.dialogues | sort: 'name' %} {% for dialogue in
+    dialogues %} {% if dialogue.name == page.name %} {% unless forloop.first %}
+    {% assign prev = prev_dialogue %}
+    <a class="prev" href="{{ prev.url }}">&laquo; Previous</a>
+    {% endunless %} {% unless forloop.last %} {% assign next =
+    dialogues[forloop.index] %}
+    <a class="next" href="{{ next.url }}">Next &raquo;</a>
+    {% endunless %} {% endif %} {% assign prev_dialogue = dialogue %} {% endfor
+    %}
+  </nav>
+</article>
